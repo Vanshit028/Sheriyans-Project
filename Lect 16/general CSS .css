@@ -1,0 +1,30 @@
+/* Css Boiler Plate */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+#container{
+    width: 100%;
+    height: 100%;
+}
+
+/* List */
+
+ul{
+  list-style: none;  
+}
+
+/* Link */
+
+a{
+    text-decoration: none;
+}

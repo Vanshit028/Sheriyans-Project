@@ -1,0 +1,222 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap'); */
+
+* {
+    font-family: "Montserrat";
+}
+
+#container {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    background-color: rgb(131, 98, 107);
+}
+
+.heading {
+    user-select: none;
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+
+    transform: translate(-50%, -50%);
+
+    z-index: 99999;
+
+    & h2 {
+        font-size: 75px;
+        letter-spacing: .5rem;
+
+        font-family: "Playfair Display";
+        color: #fff;
+        text-shadow: 0 0 2px #000;
+    }
+
+    & p {
+        font-family: "Playfair Display";
+        font-size: 30px;
+        color: #fff;
+        text-shadow: 0 0 2px #000;
+    }
+
+}
+
+#left {
+    position: relative;
+
+    padding: 1.5rem;
+
+    width: 46%;
+    height: 100%;
+
+    /* background-color: red; */
+
+    & .nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        & .navBar {
+            padding: 0 30%;
+        }
+
+        & ul {
+            width: 100%;
+
+            display: flex;
+            justify-content: space-between;
+            gap: 5rem;
+
+            & a {
+                color: #fff;
+            }
+
+        }
+    }
+
+    & .img {
+        position: relative;
+
+        margin: 3rem auto 0;
+
+        width: 60%;
+        height: 60vh;
+
+        background-image: url(https://images.unsplash.com/photo-1507007727303-1532f71109cf?q=80&w=1936&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+        /* background-position: center; */
+        background-size: cover;
+
+        & .content {
+            position: absolute;
+            top: 110%;
+
+            width: 100%;
+            /* height: 30%; */
+
+            display: flex;
+            color: #fff;
+
+
+            & .left {
+                width: 30%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+            }
+
+            & .right {
+                width: 70%;
+            }
+        }
+    }
+
+    & .bottomRibbon {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+
+        width: 100%;
+
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+
+        transform-origin: 5% 25%;
+        transform: rotate(-90deg);
+
+        & .line {
+            width: 30%;
+            height: 0;
+
+            border: 2px solid #fff;
+        }
+
+        & p {
+            color: #fff;
+        }
+    }
+
+}
+
+#middle {
+    position: relative;
+    width: 46%;
+    height: 100%;
+
+    background-image: url(https://images.unsplash.com/photo-1516205651411-aef33a44f7c2?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-position: center;
+    background-size: cover;
+
+    & .floatWindow {
+        position: absolute;
+        bottom: 5%;
+        right: -5%;
+
+        width: 12rem;
+        height: 10rem;
+
+        display: flex;
+
+        & .icon {
+            padding: 10% 0;
+            width: 15%;
+            height: 100%;
+
+            background-color: #fff;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        & .img {
+            width: 85%;
+            height: 100%;
+            background-image: url(https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?q=80&w=1948&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+            background-size: cover;
+        }
+
+    }
+}
+
+#right {
+    position: relative;
+
+    padding: 2rem;
+
+    width: 8%;
+    height: 100%;
+
+    & .nav {
+        position: relative;
+
+        height: 70%;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        & i {
+            text-align: right;
+            color: #fff;
+        }
+
+        & ul {
+            position: absolute;
+            bottom: 0;
+            left: 90%;
+
+            display: flex;
+            gap: 2rem;
+
+            transform-origin: 0 50%;
+            transform: rotate(-90deg);
+
+            & a {
+                color: #fff;
+            }
+        }
+    }
+
+    /* background-color: rgb(255, 173, 173); */
+}
